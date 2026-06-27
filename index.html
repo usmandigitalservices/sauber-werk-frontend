@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauber Werk | ENTRUMPELUNG und REINIGUNG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <style>
+        body { font-family: 'Google Sans', sans-serif; scroll-behavior: smooth; }
+        .bg-primary { background-color: #2563eb; }
+        .text-primary { color: #2563eb; }
+        .bg-secondary { background-color: #0f172a; }
+        .bg-soft-blue { background-color: #f8fafc; }
+        .card-shadow { box-shadow: 0 20px 50px rgba(37, 99, 235, 0.05); }
+        .blob { filter: blur(40px); position: absolute; z-index: -1; border-radius: 50%; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+    <nav class="flex items-center justify-between px-6 md:px-16 py-6 sticky top-0 bg-white/90 backdrop-blur-md z-[100] border-b border-slate-100">
+        <div class="flex items-center gap-3">
+            <div class="w-11 h-11 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                <i class="fas fa-droplet text-xl"></i>
+            </div>
+            <span class="text-2xl font-bold tracking-tighter text-secondary">Sauber<span class="text-primary">Werk</span></span>
+        </div>
+        <div class="hidden lg:flex gap-10 font-medium text-slate-600">
+            <a href="#services" class="hover:text-primary transition">Services</a>
+            <a href="#process" class="hover:text-primary transition">How it Works</a>
+            <a href="#about" class="hover:text-primary transition">About</a>
+            <a href="#faq" class="hover:text-primary transition">FAQ</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="hidden xl:block text-right">
+                <p class="text-xs text-slate-400 font-bold uppercase">Call Today</p>
+                <p class="font-bold text-secondary">+1 (555) 000-BLUE</p>
+            </div>
+            <button class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition shadow-xl shadow-blue-100">Free Quote</button>
+        </div>
+    </nav>
+
+    <section class="relative max-w-7xl mx-auto px-6 pt-12 pb-24">
+        <div class="bg-soft-blue rounded-[50px] overflow-hidden flex flex-col lg:flex-row items-center relative">
+            <div class="p-10 lg:p-24 lg:w-3/5 reveal-left">
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8 text-secondary">
+                    Sparkly Residential & <span class="text-primary">Commercial</span> Cleaning
+                </h1>
+                <p class="text-slate-500 mb-10 text-xl max-w-xl">Stop wasting your precious free time cleaning. Relax while our professionals make your space shine!</p>
+                <div class="flex flex-wrap gap-5">
+                    <button class="bg-yellow-400 text-secondary px-10 py-4 rounded-2xl font-bold text-lg hover:bg-yellow-500 transition-all">Get Started</button>
+                    <button class="bg-white border-2 border-primary text-primary px-10 py-4 rounded-2xl font-bold text-lg hover:bg-primary hover:text-white transition-all">Our Services</button>
+                </div>
+                <div class="mt-12 flex gap-8">
+                    <div class="flex items-center gap-2 font-bold text-sm"><i class="fas fa-check text-primary"></i> Vetted Staff</div>
+                    <div class="flex items-center gap-2 font-bold text-sm"><i class="fas fa-check text-primary"></i> Eco-Friendly</div>
+                    <div class="flex items-center gap-2 font-bold text-sm"><i class="fas fa-check text-primary"></i> Insured</div>
+                </div>
+            </div>
+            <div class="lg:w-2/5 p-8 reveal-right">
+                <img src="hero.jpg" class="rounded-[40px] shadow-2xl object-cover h-[500px] w-full">
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 reveal-bottom">
+            <p class="text-primary font-bold tracking-widest uppercase text-sm mb-4">The Process</p>
+            <h2 class="text-4xl lg:text-5xl font-bold text-secondary">Quick and Easy</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-16 relative">
+            <div class="hidden md:block absolute top-1/4 left-1/4 right-1/4 h-[2px] bg-blue-100 -z-10"></div>
+            
+            <div class="text-center reveal-bottom" data-reveal-delay="100">
+                <div class="w-24 h-24 bg-white border-8 border-soft-blue rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl">
+                    <i class="fas fa-file-invoice text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Free Quote</h3>
+                <p class="text-slate-500">Tell us about your home and choose the date you want.</p>
+            </div>
+            <div class="text-center reveal-bottom" data-reveal-delay="300">
+                <div class="w-24 h-24 bg-white border-8 border-soft-blue rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl">
+                    <i class="fas fa-wand-magic-sparkles text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Clean</h3>
+                <p class="text-slate-500">Our seasoned team transforms your space efficiently.</p>
+            </div>
+            <div class="text-center reveal-bottom" data-reveal-delay="500">
+                <div class="w-24 h-24 bg-white border-8 border-soft-blue rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl">
+                    <i class="fas fa-mug-hot text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Relax</h3>
+                <p class="text-slate-500">Sit back and enjoy how amazing your home looks now.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondary py-24 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center mb-20">
+                <div class="reveal-left">
+                    <h2 class="text-4xl font-bold mb-6">We Are The Best Option For A Sparkling Home</h2>
+                    <p class="text-slate-400 text-lg mb-8">With over 15 years in the industry, we've perfected the art of cleaning. Our teams are trained in the latest sanitization protocols.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3"><i class="fas fa-circle-check text-primary"></i> Always keep you up to date</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-circle-check text-primary"></i> Treated like our own home</li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-6 reveal-right">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <p class="text-4xl font-bold text-primary mb-2">15+</p>
+                        <p class="text-sm text-slate-400 font-medium">Years Experience</p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <p class="text-4xl font-bold text-primary mb-2">10k+</p>
+                        <p class="text-sm text-slate-400 font-medium">Homes Cleaned</p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <p class="text-4xl font-bold text-primary mb-2">500+</p>
+                        <p class="text-sm text-slate-400 font-medium">Saved Hours</p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <p class="text-4xl font-bold text-primary mb-2">95%</p>
+                        <p class="text-sm text-slate-400 font-medium">Repeat Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-secondary mb-16 reveal-left">What We Can <br> Do For You</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="group reveal-bottom cursor-pointer">
+                <div class="relative overflow-hidden rounded-[30px] mb-6 h-64">
+                    <img src="house-cleaning.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white font-bold text-xl">House Cleaning</div>
+                </div>
+            </div>
+            <div class="group reveal-bottom cursor-pointer" data-reveal-delay="200">
+                <div class="relative overflow-hidden rounded-[30px] mb-6 h-64">
+                    <img src="office-cleaning.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white font-bold text-xl">Office Cleaning</div>
+                </div>
+            </div>
+            <div class="group reveal-bottom cursor-pointer" data-reveal-delay="400">
+                <div class="relative overflow-hidden rounded-[30px] mb-6 h-64">
+                    <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white font-bold text-xl">Deep Cleaning</div>
+                </div>
+            </div>
+            <div class="group reveal-bottom cursor-pointer" data-reveal-delay="600">
+                <div class="relative overflow-hidden rounded-[30px] mb-6 h-64">
+                    <img src="move-in-out.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white font-bold text-xl">Move In/Out</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-soft-blue">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 reveal-bottom">Frequently Asked Questions</h2>
+            <div class="space-y-4 reveal-bottom">
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-bold text-lg list-none cursor-pointer">
+                            Are your cleaning products safe for pets?
+                            <span class="group-open:rotate-180 transition"><i class="fas fa-plus text-primary"></i></span>
+                        </summary>
+                        <p class="mt-4 text-slate-500">Yes, we exclusively use non-toxic, biodegradable cleaning agents that are 100% safe for children and pets.</p>
+                    </details>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-bold text-lg list-none cursor-pointer">
+                            How do I pay for my cleaning?
+                            <span class="group-open:rotate-180 transition"><i class="fas fa-plus text-primary"></i></span>
+                        </summary>
+                        <p class="mt-4 text-slate-500">We accept all major credit cards, Apple Pay, and secure bank transfers through our online portal.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-secondary text-white pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12 border-b border-white/10 pb-20">
+            <div class="col-span-1 lg:col-span-1">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <span class="text-2xl font-bold">Sauber Werk</span>
+                </div>
+                <p class="text-slate-400 mb-8">Premium cleaning services for high-end homes and modern corporate offices.</p>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition cursor-pointer"><i class="fab fa-facebook-f"></i></div>
+                    <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition cursor-pointer"><i class="fab fa-twitter"></i></div>
+                    <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition cursor-pointer"><i class="fab fa-instagram"></i></div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-8">Company</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition">Press Release</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-8">Support</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-8">Newsletter</h4>
+                <div class="flex bg-white/5 p-2 rounded-xl">
+                    <input type="text" placeholder="Email Address" class="bg-transparent border-none p-3 outline-none w-full">
+                    <button class="bg-primary px-5 rounded-lg font-bold">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-12 text-slate-500 text-sm">
+            <p>&copy; 2026 ClanyBlue Professional Services. Powered by Gemini Core.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ScrollReveal Animation
+        const sr = ScrollReveal({
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+            reset: false
+        });
+
+        sr.reveal('.reveal-left', { origin: 'left' });
+        sr.reveal('.reveal-right', { origin: 'right' });
+        sr.reveal('.reveal-bottom', { origin: 'bottom', interval: 200 });
+    </script>
+</body>
+</html>
